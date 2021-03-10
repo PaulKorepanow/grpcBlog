@@ -2,7 +2,8 @@ syntax = "proto3";
 
 package api;
 
-option go_package = "github.com/PaulKorepanow/api";
+option go_package = "github.com/PaulKorepanow/grpcBlog/api";
+
 
 service blogger {
   rpc CreateBlog(createBlogRequest) returns(createBlogResponse);
