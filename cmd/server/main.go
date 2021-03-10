@@ -1,9 +1,9 @@
 package main
 
 import (
-	"bloggrpc/pkg/api"
-	"bloggrpc/pkg/blogserver"
 	"context"
+	"github.com/PaulKorepanow/grpcBlog/pkg/api"
+	"github.com/PaulKorepanow/grpcBlog/pkg/blogserver"
 	"go.mongodb.org/mongo-driver/mongo"
 	"go.mongodb.org/mongo-driver/mongo/options"
 	"google.golang.org/grpc"
