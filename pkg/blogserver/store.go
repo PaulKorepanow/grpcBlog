@@ -1,9 +1,9 @@
 package blogserver
 
 import (
-	"bloggrpc/pkg/api"
 	"context"
 	"fmt"
+	"github.com/PaulKorepanow/grpcBlog/pkg/api"
 	"go.mongodb.org/mongo-driver/bson"
 	"go.mongodb.org/mongo-driver/bson/primitive"
 	"google.golang.org/grpc/codes"

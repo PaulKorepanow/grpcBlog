@@ -4,7 +4,6 @@ package api;
 
 option go_package = "github.com/PaulKorepanow/grpcBlog/api";
 
-
 service blogger {
   rpc CreateBlog(createBlogRequest) returns(createBlogResponse);
   rpc ReadBlog(readBlogRequest) returns(readBlogResponse);
