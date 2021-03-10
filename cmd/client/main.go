@@ -1,7 +1,7 @@
 package main
 
 import (
-	"bloggrpc/cmd"
+	"github.com/PaulKorepanow/grpcBlog/cmd"
 	"log"
 )
 

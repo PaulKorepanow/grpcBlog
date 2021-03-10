@@ -16,9 +16,9 @@ limitations under the License.
 package cmd
 
 import (
-	"bloggrpc/pkg/api"
 	"context"
 	"fmt"
+	"github.com/PaulKorepanow/grpcBlog/pkg/api"
 	"github.com/spf13/cobra"
 	"github.com/streadway/amqp"
 	"google.golang.org/grpc"

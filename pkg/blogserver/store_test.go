@@ -1,8 +1,8 @@
 package blogserver
 
 import (
-	"bloggrpc/pkg/api"
 	"context"
+	"github.com/PaulKorepanow/grpcBlog/pkg/api"
 	"github.com/stretchr/testify/assert"
 	"testing"
 )

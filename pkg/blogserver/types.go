@@ -1,7 +1,7 @@
 package blogserver
 
 import (
-	"bloggrpc/pkg/api"
+	"github.com/PaulKorepanow/grpcBlog/pkg/api"
 	"go.mongodb.org/mongo-driver/bson"
 	"go.mongodb.org/mongo-driver/bson/primitive"
 	"go.mongodb.org/mongo-driver/mongo"

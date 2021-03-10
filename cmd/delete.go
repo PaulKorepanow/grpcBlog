@@ -16,8 +16,8 @@ limitations under the License.
 package cmd
 
 import (
-	"bloggrpc/pkg/api"
 	"fmt"
+	"github.com/PaulKorepanow/grpcBlog/pkg/api"
 
 	"github.com/spf13/cobra"
 )
