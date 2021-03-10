@@ -1,0 +1,58 @@
+syntax = "proto3";
+
+package api;
+
+option go_package = "github.com/PaulKorepanow/api";
+
+service blogger {
+  rpc CreateBlog(createBlogRequest) returns(createBlogResponse);
+  rpc ReadBlog(readBlogRequest) returns(readBlogResponse);
+  rpc UpdateBlog(updateBlogRequest) returns(updateBlogResponse);
+  rpc DeleteBlog(deleteBlogRequest) returns(deleteBlogResponse);
+  rpc ListBlogs(listBlogRequest) returns(stream listBlogResponse);
+}
+
+message Blog {
+  string id = 1;
+  string author_id = 2;
+  string title = 3;
+  string content = 4;
+}
+
+message createBlogRequest{
+  Blog blog = 1;
+}
+
+message createBlogResponse{
+  Blog blog = 1;
+}
+
+message readBlogRequest{
+  string id = 1;
+}
+
+message readBlogResponse{
+  Blog blog = 1;
+}
+
+message updateBlogRequest{
+  Blog blog = 1;
+}
+
+message updateBlogResponse{
+  Blog blog = 1;
+}
+
+message deleteBlogRequest{
+  string id = 1;
+}
+
+message deleteBlogResponse{
+  bool success = 1;
+}
+
+message listBlogRequest{}
+
+message listBlogResponse{
+  Blog blog = 1;
+}
